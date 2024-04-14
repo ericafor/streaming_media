@@ -2,6 +2,9 @@
     background-color: white;
     color: #590242;
     font-family: graphie;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 h1 {font-size:1.25em;}
@@ -10,16 +13,43 @@ h2, h3 {font-size: 1em;}
 p, dl, dd {font-size: 1em;}
 footer p {font-size: .75em;}
 
-
 nav ul li{
     list-style-type:none;
     color: white;
 }
 
 #smooth-jazz{
-
 color: white;
 }
+
+.scroll{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.scroll section {
+margin: 10px;
+position: relative;
+}
+
+
+.scroll div{
+position: absolute;
+top: 256px;
+background-color: rgba(255, 255, 255,.75);
+padding: 5px;
+height: 50px;
+width: 350px;
+}
+
+.scroll div li{
+    bottom: 100px;
+    }
+
+
 
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
