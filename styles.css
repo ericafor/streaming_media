@@ -1,0 +1,43 @@
+#trending-songs-grid{
+    background-color: white;
+    color: #590242;
+    font-family: graphie;
+}
+
+h1 {font-size:1.25em;}
+
+h2, h3 {font-size: 1em;}
+p, dl, dd {font-size: 1em;}
+footer p {font-size: .75em;}
+
+
+nav ul li{
+    list-style-type:none;
+    color: white;
+}
+
+#smooth-jazz{
+
+color: white;
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #020659;
+}
+
+
+
+#your-playlists-grid{
+
+background-color: goldenrod;
+color: white;
+font-family: graphie;
+}
+
+
+#curated-playlists-grid{
+    background-color:forestgreen;
+    color: white;
+    font-family: graphie;
+}
