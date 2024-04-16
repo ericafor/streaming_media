@@ -1,10 +1,22 @@
-#trending-songs-grid{
+#trending{
     background-color: white;
     color: #590242;
     font-family: graphie;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
     grid-template-rows: 1fr;
+}
+
+#trending ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 15px #590242;
+}
+
+#trending ::-webkit-scrollbar-thumb{
+    background: #590242;
+}
+
+#trending ::-webkit-scrollbar-thumb:hover{
+    background: #020659;
 }
 
 h1 {font-size:1.25em;}
@@ -13,13 +25,62 @@ h2, h3 {font-size: 1em;}
 p, dl, dd {font-size: 1em;}
 footer p {font-size: .75em;}
 
+header{
+    display: block;
+    background-color: #030A8C;
+    color:white;
+    padding: 40px;
+    text-align: left;
+    }
+
+
+
+    main h2{
+
+        color: #590242;
+    }
+
+
+
+    nav a{
+        color: white;
+    }
+
 nav ul li{
     list-style-type:none;
     color: white;
 }
 
+nav ul{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.gridchildOne{ 
+    background-color: #2669FB;
+    color: white;
+}
+.gridchildTwo{ 
+
+    padding-bottom: 500px;
+    background-color: #020873;
+    color: white;
+}
+
+.grid-container-element { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    border: 1px solid black;
+    width: 100;
+} 
+
+
 #smooth-jazz{
 color: white;
+}
+
+section ul li{list-style-type:none;
 }
 
 .scroll{
@@ -30,11 +91,22 @@ color: white;
 }
 
 
-.scroll section {
+.scroll1{
+    overflow-y: auto;
+height: 900px;
+color: #590242;
+}
+
+.scroll2{
+    overflow-y: auto;
+height: 900px;
+color: #590242;
+}
+
+.scroll section{
 margin: 10px;
 position: relative;
 }
-
 
 .scroll div{
 position: absolute;
@@ -49,14 +121,10 @@ width: 350px;
     bottom: 100px;
     }
 
-
-
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #020659;
 }
-
-
 
 #your-playlists-grid{
 
@@ -71,3 +139,4 @@ font-family: graphie;
     color: white;
     font-family: graphie;
 }
+
