@@ -212,7 +212,7 @@ nav ul{
 .grid-container-element { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    width: 100;
+
     background-color:white;
 } 
 
@@ -239,7 +239,6 @@ section ul li{list-style-type:none;
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
-    scrollbar-color: #590242;
 }
 
 
@@ -290,7 +289,7 @@ color: white;
 
 #playlists, #curated{
 display: grid;
-grid-template-rows: repeat (5, 1fr);
+
 height: 523px;
 row-gap: 20px;
 overflow-x: hidden;
