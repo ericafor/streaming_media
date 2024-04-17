@@ -317,8 +317,23 @@ html{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:1fr 1fr;
-
 }
+
+#playlists{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x:auto;
+    overflow-y:hidden;
+    }
+
+
+    #curated{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        overflow-x:auto;
+        overflow-y:hidden;
+        }
+
 
 
   }
