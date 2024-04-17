@@ -129,6 +129,7 @@ nav li {
     display: inline-block;
     height: 100%;
     width: 50%;
+    text-align: center;
 }
 
 dl{
@@ -324,17 +325,29 @@ html{
     grid-template-columns: repeat(5, 1fr);
     overflow-x:auto;
     overflow-y:hidden;
+    grid-gap: 15px;
     }
 
+    #playlists section{
+        display: grid;
+        background-color: #0d8dfb;
+        padding: 5px;
+        text-align: center;
+    }
 
     #curated{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         overflow-x:auto;
         overflow-y:hidden;
+        grid-gap: 15px;
         }
 
 
+        #curated section{
+text-align: center;
+
+        }
+
 
   }
-
