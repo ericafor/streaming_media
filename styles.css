@@ -22,6 +22,7 @@ body{
     display: grid;
 }
 
+
 .scroll{
 display: grid;
 grid-template-columns: repeat(5, 1fr);
@@ -42,7 +43,6 @@ overflow-y:hidden;
     height: 50px;
     width: 350px;
 }
-
 
 #trending{
     background-color: white;
@@ -102,10 +102,17 @@ h2, h3{
 p, dl, dd {font-size: 1em;}
 footer p {font-size: .75em;}
 
+.hamburger-button{
 
+    display: none;
+}
 
 nav a{
     text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #590242;
 }
 
 nav li {
@@ -120,6 +127,7 @@ dl{
     margin-top: -50px;
     color: #590242;
 }
+
 
 
 #trending h2{
@@ -378,5 +386,16 @@ html{
 text-align: center;
 
         }
+
+        .hamburger-button{
+
+            display: block;
+        }
+
+        nav li:nth-last-child(-n + 4) {
+            display: none;
+        
+          }
+    
 
   }
