@@ -155,6 +155,8 @@ margin-top: -5px;
 
 }
 
+
+
 audio{
 position: absolute;
 bottom: 150px;
@@ -171,6 +173,10 @@ border-radius: 50px;
 }
 audio::-webkit-media-controls-enclosure {
     background-color: rgba(255, 255, 255,.75);
+}
+
+.moreButton1{
+padding-left: 1150px;
 }
 
 
@@ -347,10 +353,15 @@ html{
     background-color: #020659;
 }
 
+label span{
+    display:none;
+}
+
+input{display:none;}
+
 
 @media only screen and (max-width: 834px) {
     
-
 .grid-container-element {
 
     display: grid;
@@ -387,15 +398,76 @@ text-align: center;
 
         }
 
-        .hamburger-button{
-
-            display: block;
-        }
-
         nav li:nth-last-child(-n + 4) {
             display: none;
-        
           }
-    
+
+          .menu{
+            text-align: center;
+        }
+
+
+        label {
+            display: block;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-top: -10px; 
+            user-select: none;
+            position: relative;
+        }
+        
+        label span {
+            background-color: #FFFFFF;
+            display: block;
+            height: 2px;
+            transition: background-color .2s ease-out;
+            width: 18px;
+            position: relative;
+        }
+        
+        label span:before, label span:after {
+            background: #FFFFFF;
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            transition: all .2s ease-out;
+            display: block;
+        }  
+        
+        label span:before {
+            top: 5px;
+        }
+        label span:after {
+            top: -5px;
+        }
+        input {
+            display: none;
+        }
+        
+        input:checked ~ ul {
+            max-height: 500px;
+        }
+        
+        input:checked ~ label span {
+            background: transparent;
+        }
+        
+        input:checked ~ label span:before {
+            transform: rotate(-45deg);
+        }
+        input:checked ~ label span:after {
+            transform: rotate(45deg);
+        }
+        
+        input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+            top: 0;
+        } 
+        
+        .moreButton1{
+            padding-left: 10px;
+            }
+
 
   }
+
