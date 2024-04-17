@@ -294,4 +294,16 @@ position: relative;
 position: absolute;
 top: 251px;
 background-color: rgba(255, 255, 255,.75);
-p
+padding: 5px;
+height: 50px;
+width: 350px;
+}
+
+.scroll div li{
+    bottom: 100px;
+    }
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #020659;
+}
