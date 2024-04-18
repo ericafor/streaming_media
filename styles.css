@@ -1,6 +1,6 @@
 
 html{
- 
+
     background-color: #020659;
 }
 
@@ -101,6 +101,12 @@ h2, h3{
 
 p, dl, dd {font-size: 1em;}
 footer p {font-size: .75em;}
+
+footer{
+    background-color: #FFFFFF;
+    color: #590242;
+    text-align: center;
+}
 
 .hamburger-button{
 
@@ -461,12 +467,4 @@ text-align: center;
         
         input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
             top: 0;
-        } 
-        
-        .moreButton1{
-            padding-left: 10px;
-            }
-
-
-  }
-
+        }
