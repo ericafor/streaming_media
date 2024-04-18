@@ -467,4 +467,12 @@ text-align: center;
         
         input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
             top: 0;
-        }
+        } 
+        
+        .moreButton1{
+            padding-left: 10px;
+            }
+
+
+  }
+
